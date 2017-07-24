@@ -4,6 +4,8 @@ import time
 print(time.strftime("%H:%M:%S") + " / SNS raffle script for Mars Yard 2.0 by @jamzigod\n")
 
 def raffle(limit):
+ 
+ sizes = ["US 6','US 7', 'US 8', 'US 8.5', 'US 9', 'US 9.5', 'US 10' ,'US 10.5' ,'US 11' ,'US 11.5' ,'US 12', 'US 13"]
 
  s = requests.session()
 
@@ -21,7 +23,7 @@ def raffle(limit):
         'form[language]': 'en',
         'form[yes-no:warE3SilldbG]': '1',
         'form[email:Fi1mS3bZn3VF]': 'washed@gmail.com', #CHANGE EMAIL
-        'form[list:56641463][choices]': 'US 10.5' , #CHANGE SIZE
+        'form[list:56641463][choices]': sizes ,
         'form[list:56641463][other]': '',
         'form[textfield:IIdtgeMwp8Gp]':'Jamzi', #FIRST NAME
         'form[textfield:bHSS1rapvhha]':'God', #SECOND NAME
